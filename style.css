@@ -529,6 +529,20 @@ footer{
 
 }
 
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
 .logo img{
-    height:30px;
-    width:auto;
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:24px;
+    margin:0;
+}
