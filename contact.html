@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Jenny Digital Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👩 About</a>
+    <a href="services.html">💼 Services</a>
+    <a href="contact.html">📞 Contact</a>
+</div>
+
+<h1 class="page-title">Contact Jenny Digital Solution</h1>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Your Email">
+
+<input type="tel" id="phone" placeholder="Your Phone Number">
+
+<textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+
+<button type="submit" class="button">Send Message</button>
+
+</form>
+
+<script>
+function sendToWhatsApp() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+"Hello Jenny Digital Solution.\n\n" +
+"Name: " + name + "\n" +
+"Email: " + email + "\n" +
+"Phone: " + phone + "\n" +
+"Message: " + message;
+
+    window.location.href =
+    "https://api.whatsapp.com/send?phone=2349010841174&text=" +
+    encodeURIComponent(text);
+}
+</script>
+</script>
+</body>
+</html>
