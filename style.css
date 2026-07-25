@@ -546,3 +546,8 @@ footer{
     font-size:24px;
     margin:0;
 }
+header nav img{
+    width:45px !important;
+    height:45px !important;
+    object-fit:contain;
+}
