@@ -535,11 +535,7 @@ footer{
     gap:10px;
 }
 
-.logo img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
+
 
 .logo h2{
     color:#fff;
